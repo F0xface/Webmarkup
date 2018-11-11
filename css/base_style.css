@@ -9,21 +9,13 @@
 
 /* Fonts */
 @font-face {
-    font-family: roboto;
-    src: url(../fonts/Roboto/Roboto-Regular.ttf);
-}
-@font-face {
     font-family: roboto-bold;
     src: url(../fonts/Roboto/Roboto-Bold.ttf);
-}
-@font-face {
-    font-family: roboto-light;
-    src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
 
 * {
 	box-sizing: border-box;
-    font-family: roboto, "Times New Roman", Times, serif;
+    font-family: arial, "Times New Roman", Times, serif;
 }
 
 body {
@@ -33,18 +25,20 @@ body {
 	background-size: contain;
 }
 
-@media only screen and (max-width: 360px)
-{ 
-	nav { margin: 0.2em 0em; }
+@media only screen and (max-width: 360px) { 
+	nav { 
+		margin: 0.2em 0em; 
+	}
 }
 
-@media only screen and (max-width: 960px)
-{ 
-	body { margin: 0em; }
+@media only screen and (max-width: 960px) { 
+	body { 
+		margin: 0em; 
+	}
 }
 
 header {
-	font-size: 3em;
+   font-size: 3em;
    background-image: url(../img/companylogoBG.jpg);
    background-size: cover;
    background-position: bottom center;
@@ -55,6 +49,47 @@ header {
    text-shadow: 0.03em 0 0 #000, 0 -0.03em 0 #000, 0 0.03em 0 #000, -0.03em 0 0 #000;
 }
 
+#mobile-menu {
+	display: none;
+	list-style-type: none;
+	margin: 0em;
+}
+
+#mobile-menu button {
+	font-size: 0.8em;
+}
+
+@media only screen and (max-width: 360px) {
+	header {
+		font-size: 1.5em;
+	}
+
+	#desktop-nav {
+		display: none;
+	}
+
+	#menu-button:hover ~ #mobile-menu  {
+		display: block;
+	}
+
+	#mobile-menu:hover {
+		display: block;
+	}
+}
+
+#menu-button {
+	padding: 0.3em;
+}
+
+#mobile-nav {
+	text-align:left;
+}
+
+@media only screen and (min-width: 360px) {
+	#mobile-nav {
+		display: none;
+	}
+}
 
 nav {
 	background-color: #707070;

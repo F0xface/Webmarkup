@@ -12,27 +12,45 @@
     <body>
         <header>COMPANY NAME</header>
 
-        <nav>
-            <a href="products.html"><button>PRODUCTS</button></a>
-            <a href=""><button>BLOG</button></a>
+        <nav id="desktop-nav">
+            <a href="product.html"><button>PRODUCTS</button></a>
+            <a href="http://www.blogger.com"><button>BLOG</button></a>
             <a href="contact.html"><button>CONTACT</button></a>
         </nav>
 
+        <nav id="mobile-nav">
+        	<a id="menu-button"> <img src="img/menu.svg"> </a>
+			<ul id="mobile-menu">
+				<li> <a href="product.html"><button>PRODUCTS</button></a> </li>
+	            <li> <a href="http://www.blogger.com"><button>BLOG</button></a> </li>
+	            <li> <a href="contact.html"><button>CONTACT</button></a> </li>
+	        </ul>
+        </nav>
+
         <main>
-        	<h1>WE ARE ENTERTAINMENT</h1>
-        	<img style="float: left" class="tablet-img mobile-img" src="img/product3.jpg">
-        	<h1 class="tablet-title mobile-title">MOBILE GAMES</h1>
-        	<img style="float: right" class="tablet-img mobile-img" src="img/product8.jpg">
-        	<h1 class="tablet-title mobile-title">BOARD GAMES</h1>
-        	<img id="tablet-boardgames-img" class="mobile-img" src="img/product6.jpg">
-        	<h1 style="clear: both" class="mobile-title">CONSOLE GAMES</h1>
-        	<img class="mobile-img" src="img/product10.jpg">
-            
+        	<section>
+	    		<h1 id="entertainment-txt"> <span> WE ARE </span> <span> ENTERTAINMENT </span> </h1>
+	    		<img id="entertainment-img" src="img/product3.jpg">
+	    		<h1 class="tablet-d-none mobile-d-none"> <span> MOBILE </span> <span> GAMES </span> </h1>
+	    		<img id="mobile-games-img" src="img/product8.jpg">
+	    	</section>
+        	<h1 class="tablet-d-none mobile-d-none"> <span> BOARD </span> <span> GAMES </span> </h1>
+        	<img class="tablet-d-none" src="img/product6.jpg">
+    		<h1 class="mobile-d-none"> <span> CONSOLE </span> <span> GAMES </span> </h1>
+    		<img src="img/product9.jpg">
         </main>
 
         <footer>
-            Footer content
+            © 2018 - Natalia Bosboom - Inholland
         </footer>
     </body>
 </html>
 
+<!-- <h1> <span> WE ARE </span> <span> ENTERTAINMENT </span> </h1>
+        	<img class="tablet-img mobile-img" src="img/product3.jpg">
+        	<h1 class="tablet-title mobile-title"> <span> MOBILE </span> <span> GAMES </span> </h1>
+        	<img class="tablet-img mobile-img" src="img/product8.jpg">
+        	<h1 class="tablet-title mobile-title"> <span> BOARD </span> <span> GAMES </span> </h1>
+        	<img id="tablet-boardgames-img" class="mobile-img" src="img/product6.jpg">
+        	<h1 class="mobile-title"> <span> CONSOLE </span> <span> GAMES </span> </h1>
+        	<img class="mobile-img" src="img/product10.jpg"> -->
