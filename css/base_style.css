@@ -23,12 +23,24 @@
 
 * {
 	box-sizing: border-box;
-    font-family: roboto;
+    font-family: roboto, "Times New Roman", Times, serif;
 }
 
 body {
-	margin: 0em 20em;
+	margin: 0em 25%;
 	background-image: url(../img/background.jpeg);
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+@media only screen and (max-width: 360px)
+{ 
+	nav { margin: 0.2em 0em; }
+}
+
+@media only screen and (max-width: 960px)
+{ 
+	body { margin: 0em; }
 }
 
 header {
@@ -39,23 +51,32 @@ header {
    padding: 1em 0em;
    text-align: center;
    color: #FFF;
+   font-family: roboto-bold;
+   text-shadow: 0.03em 0 0 #000, 0 -0.03em 0 #000, 0 0.03em 0 #000, -0.03em 0 0 #000;
 }
 
-main {
-    
-    background-color: #FFF;
-
-}
 
 nav {
-	background-color: #333;
+	background-color: #707070;
 	color: #FFF;
 	text-align: center;
 }
 
 nav button {
-	padding: 1em;
+	padding: 0.5em;
 	background-color: rgba(0,0,0,0);
 	border-style: none;
 	color: #FFF;
+	font-size: 1.5em;
+}
+
+main {
+    background-color: #FFF;
+}
+
+footer {
+	background-color: #000;
+	text-align: center;
+	color: #FFF;
+	padding: 0.5em 0em;
 }

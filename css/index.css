@@ -4,9 +4,34 @@ h1 {
 	text-align: center;
 	background-color: #2799FA;
 	color: #FFF;
+	font-size: 3em;
 }
 
 img {
 	max-width: 100%;
 	height: auto;
+	vertical-align: top;
 }
+
+@media only screen and (max-width: 360px) { 
+	.mobile-title { 
+		display: none; 
+	}
+	.mobile-img {
+		margin: 0.2em 0em;
+	}
+}
+
+@media only screen and (max-width: 960px) and (min-width: 360px) {
+	.tablet-title {
+		display: none;
+	}
+	.tablet-img {
+		width: 50%;
+	}
+	#tablet-boardgames-img {
+		display: none;
+	}
+}
+
+
