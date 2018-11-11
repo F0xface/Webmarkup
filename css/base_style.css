@@ -1,0 +1,61 @@
+/*
+ * Color codes:
+ *
+ * Indigo (dark blue):      #223D4D
+ * Orange:                  #FE7F2D
+ * Sunglow: (yellow):       #FCCA46
+ * Teel:    (light blue:    #619B8A
+*/
+
+/* Fonts */
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: roboto-bold;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+* {
+	box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+	margin: 0em 20em;
+	background-image: url(../img/background.jpeg);
+}
+
+header {
+	font-size: 3em;
+   background-image: url(../img/companylogoBG.jpg);
+   background-size: cover;
+   background-position: bottom center;
+   padding: 1em 0em;
+   text-align: center;
+   color: #FFF;
+}
+
+main {
+    
+    background-color: #FFF;
+
+}
+
+nav {
+	background-color: #333;
+	color: #FFF;
+	text-align: center;
+}
+
+nav button {
+	padding: 1em;
+	background-color: rgba(0,0,0,0);
+	border-style: none;
+	color: #FFF;
+}
