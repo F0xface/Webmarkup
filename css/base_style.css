@@ -25,12 +25,6 @@ body {
 	background-size: contain;
 }
 
-@media only screen and (max-width: 360px) { 
-	nav { 
-		margin: 0.2em 0em; 
-	}
-}
-
 @media only screen and (max-width: 960px) { 
 	body { 
 		margin: 0em; 
@@ -41,7 +35,7 @@ header {
    font-size: 3em;
    background-image: url(../img/companylogoBG.jpg);
    background-size: cover;
-   background-position: bottom center;
+   background-position: center center;
    padding: 1em 0em;
    text-align: center;
    color: #FFF;
@@ -62,6 +56,7 @@ header {
 @media only screen and (max-width: 360px) {
 	header {
 		font-size: 1.5em;
+		text-shadow: none;
 	}
 
 	#desktop-nav {
@@ -82,10 +77,10 @@ header {
 }
 
 #mobile-nav {
-	text-align:left;
+	text-align: left;
 }
 
-@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 361px) {
 	#mobile-nav {
 		display: none;
 	}
@@ -95,6 +90,7 @@ nav {
 	background-color: #707070;
 	color: #FFF;
 	text-align: center;
+	padding: 0.03em;
 }
 
 nav button {

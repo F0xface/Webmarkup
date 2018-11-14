@@ -4,4 +4,61 @@ h1 {
 	background-color: #2699FB;
 	color: #FFF;
 	font-size: 4em;
+	padding: 0.2em;
+	font-weight: normal;
+}
+
+fieldset {
+	margin: 0.5em 0em;
+	padding: 0em;
+	color: #AAAAAA;
+}
+
+form {
+	padding: 0em 10%
+}
+
+.contactFormFieldset input, textarea {
+	width: 100%;
+	border: none;
+	padding: 0.3em;
+}
+
+select {
+	width: 60%;
+	color: #707070;
+	float: right;
+}
+
+::placeholder {
+	color: #AAAAAA ;
+}
+
+
+::-ms-input-placeholder {
+	color: #AAAAAA;
+}
+
+#topic {
+	padding: 0.3em;
+}
+
+label {
+	font-size: 13.3333px;
+}
+
+input[type="submit"] {
+	width: 100%;
+	background-color: #2699FB;
+	color: #FFF;
+	padding: 0.2em 0em;
+	border: none;
+}
+
+p {
+	margin-left: 5%;
+}
+
+main {
+	padding-bottom: 2em;
 }
