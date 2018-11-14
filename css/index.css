@@ -9,8 +9,9 @@ h1 {
 }
 
 main img {
-	max-width: 100%;
-	height: auto;
+	width: 100%;
+	object-fit: cover;
+	max-height: 350px;
 	vertical-align: top;
 	display: inline;
 }
