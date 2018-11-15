@@ -29,6 +29,14 @@ video {
 	body { 
 		margin: 0em; 
 	}
+
+	video {
+		display: none;
+	}
+
+	body {
+		background-image: none;
+	}
 }
 
 header {
