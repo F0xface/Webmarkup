@@ -1,11 +1,15 @@
+/*Product catalog title on desktop*/
 p {
 	margin: 0em;
 	text-align: center;
 	background-color: #2699FB;
 	color: #FFF;
 	font-size: 4em;
+	padding: 0.2em;
 }
+/*End of product catalog*/
 
+/*Fixing all the images to scale*/
 .container {
 	display: flex;
 	flex-wrap: wrap;
@@ -15,17 +19,20 @@ p {
 .container > img {
 	height: 300px;
 	width: 33.3%;
-	/*object-fit: cover;*/
-	object-fit: fill;
+	object-fit: cover;
 	padding: 7px;
 }
+/*End of fixing images*/
 
+/*Desktop mode don't display mobile only title*/
 @media screen and (min-width: 960px) {
 	.mobile-d-only {
 		display: none;
 	}
 }
+/*End*/
 
+/*Tablet mode settings*/
 @media screen and (max-width: 960px) and (min-width: 361px) {
 	.container > img {
 		width: 50%;
@@ -39,7 +46,9 @@ p {
 		display: none;
 	}
 }
+/*End of tablet mode settings*/
 
+/*Mobile mode settings*/
 @media screen and (max-width: 360px) {
 	.container > img {
 		width: 100%;
@@ -53,3 +62,4 @@ p {
 		font-size: 2em;
 	}
 }
+/*End of mobile mode settings*/
