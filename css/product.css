@@ -10,13 +10,13 @@ p {
 /*End of product catalog*/
 
 /*Fixing all the images to scale*/
-.container {
+#container {
 	display: flex;
 	flex-wrap: wrap;
 	background-color: #FFF;
 }
 
-.container > img {
+#container > img {
 	height: 200px;
 	width: 33.3%;
 	object-fit: cover;
@@ -34,7 +34,7 @@ p {
 
 /*Tablet mode settings*/
 @media screen and (max-width: 960px) and (min-width: 361px) {
-	.container > img {
+	#container > img {
 		width: 50%;
 	}
 
@@ -50,7 +50,7 @@ p {
 
 /*Mobile mode settings*/
 @media screen and (max-width: 360px) {
-	.container > img {
+	#container > img {
 		width: 100%;
 	}
 
