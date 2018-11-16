@@ -70,7 +70,7 @@ header {
 	margin: 0em;
 }
 
-#mobile-menu button {
+#mobile-menu a {
 	font-size: 0.8em;
 }
 /*End of hamburger menu settings*/
@@ -117,12 +117,15 @@ nav {
 	background-color: #707070;
 	color: #FFF;
 	text-align: center;
-	padding: 0.03em;
 	border: #FFF solid;
     border-width: 0em 0em 0.02em 0em;
 }
 
-nav button {
+#desktop-nav {
+	padding: 0.8em;
+}
+
+nav a {
 	padding: 0.5em;
 	background-color: rgba(0,0,0,0);
 	border-style: none;
@@ -131,7 +134,7 @@ nav button {
 	cursor: pointer;
 }
 
-nav button:hover {
+nav a:hover {
 	background-color: rgba(0,0,0,0.1);
 }
 /*End of navigation bar settings*/
@@ -157,19 +160,21 @@ a {
 
 /*Header&navigation on tablet mode*/
 @media only screen and (min-width: 361px) and (max-width: 960px) {
-	nav button{
-		font-size: 1.5em;
+	nav a{
+		font-size: 1.1em;
 		border:0em;
 		padding: 0em 0.5em;
 	}
 
 	nav{
-		border: 0px, 1px, 1px, 1px solid #FFF;
+		border-width: 0.02em 0.02em 0.02em 0.02em;
 	}
 
 	header {
 		font-size: 2em;
 		text-shadow: 0.05em 0 0 #000, 0 -0.05em 0 #000, 0 0.05em 0 #000, -0.05em 0 0 #000;
+		border-width: 0em;
 	}
+
 }
 /*End of tablet mode*/
